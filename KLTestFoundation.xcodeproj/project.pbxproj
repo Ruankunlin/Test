@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C103D522564C81D00630318 /* KLTestFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C103D512564C81D00630318 /* KLTestFoundation.swift */; };
+		7C33A1E025676C9000A99EE6 /* KLHomeFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33A1DF25676C9000A99EE6 /* KLHomeFoundation.swift */; };
 		82421053A72B031BE0408C6C /* Pods_KLTestFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D203F573030523D7EB6063E /* Pods_KLTestFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		5805858FFF59FF418D9F4403 /* Pods-KLTestFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLTestFoundation.release.xcconfig"; path = "Target Support Files/Pods-KLTestFoundation/Pods-KLTestFoundation.release.xcconfig"; sourceTree = "<group>"; };
 		7C103D4E2564C81D00630318 /* libKLTestFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKLTestFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C103D512564C81D00630318 /* KLTestFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTestFoundation.swift; sourceTree = "<group>"; };
+		7C33A1DF25676C9000A99EE6 /* KLHomeFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeFoundation.swift; sourceTree = "<group>"; };
 		817833A79D23D570B8493A65 /* Pods-KLTestFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLTestFoundation.debug.xcconfig"; path = "Target Support Files/Pods-KLTestFoundation/Pods-KLTestFoundation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +59,6 @@
 				817833A79D23D570B8493A65 /* Pods-KLTestFoundation.debug.xcconfig */,
 				5805858FFF59FF418D9F4403 /* Pods-KLTestFoundation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7C103D512564C81D00630318 /* KLTestFoundation.swift */,
+				7C33A1DF25676C9000A99EE6 /* KLHomeFoundation.swift */,
 			);
 			path = KLTestFoundation;
 			sourceTree = "<group>";
@@ -170,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C33A1E025676C9000A99EE6 /* KLHomeFoundation.swift in Sources */,
 				7C103D522564C81D00630318 /* KLTestFoundation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
