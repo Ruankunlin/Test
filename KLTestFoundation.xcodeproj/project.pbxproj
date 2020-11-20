@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C103D522564C81D00630318 /* KLTestFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C103D512564C81D00630318 /* KLTestFoundation.swift */; };
+		82421053A72B031BE0408C6C /* Pods_KLTestFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D203F573030523D7EB6063E /* Pods_KLTestFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D203F573030523D7EB6063E /* Pods_KLTestFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLTestFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5805858FFF59FF418D9F4403 /* Pods-KLTestFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLTestFoundation.release.xcconfig"; path = "Target Support Files/Pods-KLTestFoundation/Pods-KLTestFoundation.release.xcconfig"; sourceTree = "<group>"; };
 		7C103D4E2564C81D00630318 /* libKLTestFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKLTestFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C103D512564C81D00630318 /* KLTestFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTestFoundation.swift; sourceTree = "<group>"; };
+		817833A79D23D570B8493A65 /* Pods-KLTestFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLTestFoundation.debug.xcconfig"; path = "Target Support Files/Pods-KLTestFoundation/Pods-KLTestFoundation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82421053A72B031BE0408C6C /* Pods_KLTestFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ACF4A1450F124DEBB387BF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D203F573030523D7EB6063E /* Pods_KLTestFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45EEE8768FD84B231050D951 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				817833A79D23D570B8493A65 /* Pods-KLTestFoundation.debug.xcconfig */,
+				5805858FFF59FF418D9F4403 /* Pods-KLTestFoundation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7C103D452564C81D00630318 = {
 			isa = PBXGroup;
 			children = (
 				7C103D502564C81D00630318 /* KLTestFoundation */,
 				7C103D4F2564C81D00630318 /* Products */,
+				45EEE8768FD84B231050D951 /* Pods */,
+				2ACF4A1450F124DEBB387BF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C103D552564C81D00630318 /* Build configuration list for PBXNativeTarget "KLTestFoundation" */;
 			buildPhases = (
+				A7DDFE1C8D2E464267C45ABF /* [CP] Check Pods Manifest.lock */,
 				7C103D4A2564C81D00630318 /* Sources */,
 				7C103D4B2564C81D00630318 /* Frameworks */,
 				7C103D4C2564C81D00630318 /* CopyFiles */,
@@ -113,6 +139,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7DDFE1C8D2E464267C45ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLTestFoundation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C103D4A2564C81D00630318 /* Sources */ = {
@@ -244,6 +295,7 @@
 		};
 		7C103D562564C81D00630318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817833A79D23D570B8493A65 /* Pods-KLTestFoundation.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -256,6 +308,7 @@
 		};
 		7C103D572564C81D00630318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5805858FFF59FF418D9F4403 /* Pods-KLTestFoundation.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
